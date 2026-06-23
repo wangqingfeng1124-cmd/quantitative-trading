@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🕐 Digital Clock</h1>
+        <p class="subtitle">Current Time in Different Time Zones</p>
+        
+        <!-- Add Time Zone Form -->
+        <div class="control-panel">
+            <div class="add-timezone">
+                <label for="timezone-select">Add Time Zone:</label>
+                <select id="timezone-select">
+                    <option value="">-- Select a time zone --</option>
+                </select>
+                <button id="add-btn" class="btn btn-primary">+ Add</button>
+            </div>
+            
+            <div class="controls">
+                <button id="toggle-format-btn" class="btn btn-secondary">Toggle 24/12 Hour</button>
+                <button id="remove-all-btn" class="btn btn-danger">Clear All</button>
+            </div>
+        </div>
+        
+        <!-- Clocks Display -->
+        <div class="clocks-grid" id="clocks-grid">
+            <!-- Clock cards will be dynamically inserted here -->
+        </div>
+        
+        <!-- No Clocks Message -->
+        <div class="empty-state" id="empty-state">
+            <p>📍 No time zones added yet. Click "Add" to get started!</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
